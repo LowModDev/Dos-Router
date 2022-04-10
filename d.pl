@@ -13,13 +13,13 @@ use Term::ANSIColor;
 use Socket;
 use strict;
 
-print colored( sprintf("%4.4s", '0123456789'), 'magenta' ), "\n";
+
  
 if ($#ARGV != 3) {
   print "-Tip on use : perl DDoS.pl 8.8.8.8 80 2048 500\n";
   exit(1);
 }
- 
+ print colored( sprintf("%4.4s", '0123456789'), 'magenta' ), "\n";
 my ($ip,$port,$size,$time) = @ARGV;
 my ($iaddr,$endtime,$psize,$pport);
 $iaddr = inet_aton("$ip") or die "Cannot connect to $ip\n";
