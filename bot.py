@@ -7,7 +7,7 @@ import time
 #pip install python-telegram-bot numpy dnspython==1.15.0
 
 delay = 1.5
-API_KEY = '5568579964:AAHnx2QDLTt16zljr1toQC4luAEMHel1UY0'#填寫Telegram bots API Token
+API_KEY = '5568579964:AAGA-XFEFkZFm5vVKyluu3iDqezDMI9TOuY'#填寫Telegram bots API Token
 
 
 os.system("cls||clear")
